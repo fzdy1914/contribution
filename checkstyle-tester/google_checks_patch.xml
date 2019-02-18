@@ -16,6 +16,13 @@
  -->
 
 <module name = "Checker">
+
+    <!-- do not change severity to 'error', as that will hide errors caused by exceptions -->
+    <property name="severity" value="warning"/>
+
+    <!-- haltOnException is required for exception fixes and reporting of all exceptions -->
+    <property name="haltOnException" value="false"/>
+
     <property name="charset" value="UTF-8"/>
 
     <property name="severity" value="warning"/>
